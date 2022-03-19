@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="containerMint">
+        <div class="WrapperMint">
+            <div class="MintHeading">Mint NFT</div>
+            <div class="MintImageWrapper">
+                <div class="MintImage">Add Art Photo</div>
+            </div>
+
+            <div class="currencyWrapper">
+                <label for="Currency">Currency</label>
+
+                <label class="select" for="slct">
+            <select id="slct" required="required">
+              <option value="" disabled="disabled" selected="selected">
+                Select option
+              </option>
+              <option value="#">One</option>
+              <option value="#">Two</option>
+            </select>
+            <svg>
+              <use xlink:href="#select-arrow-down"></use>
+            </svg>
+          </label>
+                <!-- SVG Sprites-->
+                <svg class="sprites">
+            <symbol id="select-arrow-down" viewbox="0 0 10 6">
+              <polyline points="1 1 5 5 9 1"></polyline>
+            </symbol>
+          </svg>
+            </div>
+            <div class="QuantityWrapper">
+                <label for="Quantity">Quantity</label>
+                <div class="quantityLabels">
+                    <div class="circle">+</div>
+
+                    <div class="inputValue">5</div>
+
+                    <div class="circle">-</div>
+                </div>
+            </div>
+
+            <div class="TotalWrapper">
+                <label for="Total">Total</label>
+
+                <div class="totalValue">100</div>
+            </div>
+
+            <div class="MintButtonWrapper">
+                <button class="MintNowButton">Mint Now!</button>
+
+                <p class="InstructionsParagraph">Lorem, ipsum dolor sit amet</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

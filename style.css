@@ -1,0 +1,208 @@
+.containerMint {
+  height: 96vh;
+  margin: auto;
+  width: 50vw;
+  background: black;
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(
+      114.15% 250.07% at 100% 100%,
+      #eee623 0%,
+      #2399ee 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background-blend-mode: screen;
+  border-radius: 20px;
+}
+
+.WrapperMint {
+  width: 32%;
+  /* background: red; */
+}
+.MintHeading {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+  padding-bottom: 2%;
+}
+.MintImageWrapper {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background: black; */
+}
+.MintImage {
+  width: 100%;
+  height: 13rem;
+
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.currencyWrapper {
+  width: 100%;
+}
+
+.Currency,
+.Quantity,
+.totalValue {
+  margin-bottom: 1rem;
+}
+
+.select {
+  position: relative;
+  min-width: 200px;
+  margin-top: 5rem;
+}
+.select svg {
+  position: absolute;
+  right: 12px;
+  top: calc(50% - 3px);
+  width: 10px;
+  height: 6px;
+  stroke-width: 2px;
+  stroke: #9098a9;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.select select {
+  -webkit-appearance: none;
+  padding: 7px 40px 7px 12px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  transition: all 150ms ease;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-sizing: border-box;
+  box-shadow: 2px 1px 1px rgba(255, 255, 255, 0.15),
+    inset 2px 4px 4px rgba(0, 0, 0, 0.11);
+  border-radius: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.select select:required:invalid {
+  color: #5a667f;
+}
+.select select option {
+  color: #223254;
+}
+.select select option[value=""][disabled] {
+  display: none;
+}
+.select select:focus {
+  outline: none;
+}
+.select select:hover + svg {
+  stroke: #07f;
+}
+.sprites {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.quantityLabels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  background: #fff;
+  color: #fff;
+  text-align: center;
+  font: 20px;
+
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.inputValue {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-sizing: border-box;
+  box-shadow: 2px 1px 1px rgba(255, 255, 255, 0.15),
+    inset 2px 4px 4px rgba(0, 0, 0, 0.11);
+  border-radius: 10px;
+  width: 5rem;
+  height: 2.8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  color: white;
+
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.totalValue {
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+  font-weight: bold;
+  justify-content: center;
+}
+.MintNowButton {
+  background: #2399ee;
+  height: 2.3rem;
+  border: none;
+  width: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    #2399ee;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  color: white;
+}
+
+.InstructionsParagraph {
+  margin: 0;
+  padding-top: 2%;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+  .containerMint {
+    width: 98%;
+    height: 96vh;
+  }
+  .WrapperMint {
+    width: 82%;
+  }
+}
